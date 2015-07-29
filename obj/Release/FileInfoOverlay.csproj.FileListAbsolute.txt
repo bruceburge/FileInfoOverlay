@@ -1,0 +1,9 @@
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Release\FileInfoOverlay.exe.config
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Release\FileInfoOverlay.exe
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Release\FileInfoOverlay.pdb
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.csprojResolveAssemblyReference.cache
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.Form1.resources
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.Properties.Resources.resources
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.csproj.GenerateResource.Cache
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.exe
+c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Release\FileInfoOverlay.pdb
