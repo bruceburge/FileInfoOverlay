@@ -25,10 +25,37 @@ namespace FileInfoOverlay.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("FakeApc.exe")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Apc.exe")]
         public string AppName {
             get {
                 return ((string)(this["AppName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10, 10")]
+        public global::System.Drawing.Point DisplayOffSetInPixels {
+            get {
+                return ((global::System.Drawing.Point)(this["DisplayOffSetInPixels"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color ForeGround {
+            get {
+                return ((global::System.Drawing.Color)(this["ForeGround"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Transparent")]
+        public global::System.Drawing.Color BackGround {
+            get {
+                return ((global::System.Drawing.Color)(this["BackGround"]));
             }
         }
     }

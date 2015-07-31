@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -14,10 +15,10 @@ using System.Windows.Forms;
 namespace FileInfoOverlay
 {
 	public partial class Form1 : Form
-	{
-		//string windowTitle = Properties.Settings.Default.AppTitle;
-		string appName = Properties.Settings.Default.AppName;
-
+	{		
+		string _internalPath = string.Empty;
+		Point _offset = Properties.Settings.Default.DisplayOffSetInPixels;
+		
 		[StructLayout(LayoutKind.Sequential)]
 		public struct RECT
 		{
@@ -43,11 +44,14 @@ namespace FileInfoOverlay
 		{
 			IntPtr hWnd = IntPtr.Zero; //FindWindow(null, "MainWindow");
 
-			var process = Process.GetProcessesByName(appName.Replace(".exe", "")).FirstOrDefault();
+			var process = Process.GetProcessesByName(
+				Path.GetFileNameWithoutExtension(_internalPath)
+				).FirstOrDefault();
+			
 			if (process != null)
 			{
 				hWnd = process.MainWindowHandle;
-				string fullPath = process.Modules[0].FileName;
+				//string fullPath = process.Modules[0].FileName;
 				//string ram = process.WorkingSet64.ToString();
 		
 				RECT rect;
@@ -67,13 +71,39 @@ namespace FileInfoOverlay
 					else
 					{
 						this.WindowState = FormWindowState.Normal;
-						this.Location = new Point(rect.X + 10, rect.Y + 10);
+						this.TopMost = true;
+						this.Location = new Point(rect.X + _offset.X, rect.Y + _offset.Y);
 
-						FileVersionInfo versionInfo = FileVersionInfo.GetVersionInfo(appName);
-						label1.Text = fullPath + " V. " + versionInfo.ProductVersion;
+						FileVersionInfo versionInfo = FileVersionInfo.GetVersionInfo(_internalPath);
+						label1.Text = _internalPath + " V. " + versionInfo.ProductVersion;
 					}
 				}
 			}
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			_internalPath = Properties.Settings.Default.AppName;
+			 
+			//if the provided file doesn't exist, see if it exist in the current directory 
+			//this is to allow for full path, and local path names in config.
+			if (!File.Exists(_internalPath))
+			{
+				string combinePath = Path.Combine(Environment.CurrentDirectory, _internalPath);
+				if (File.Exists(combinePath))
+				{
+					_internalPath = combinePath;
+				}
+				else
+				{
+					MessageBox.Show("File not found : " + _internalPath);
+					Application.Exit();
+				}
+			}
+
+			label1.ForeColor = Properties.Settings.Default.ForeGround;
+			label1.BackColor = Properties.Settings.Default.BackGround;
+
 		}
 	}
 }

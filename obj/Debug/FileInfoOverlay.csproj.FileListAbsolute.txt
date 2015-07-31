@@ -1,9 +1,0 @@
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Debug\FileInfoOverlay.exe.config
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Debug\FileInfoOverlay.exe
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\bin\Debug\FileInfoOverlay.pdb
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.csprojResolveAssemblyReference.cache
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.Form1.resources
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.Properties.Resources.resources
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.csproj.GenerateResource.Cache
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.exe
-c:\users\bburge\documents\visual studio 2013\Projects\FileInfoOverlay\FileInfoOverlay\obj\Debug\FileInfoOverlay.pdb
