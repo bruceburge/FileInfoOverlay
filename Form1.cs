@@ -126,8 +126,8 @@ namespace FileInfoOverlay
             {
                 Visible = false;
                 _watchedProcess.Kill();
-                tmrPaintCheck.Stop();
-                Environment.Exit(0);
+                //tmrPaintCheck.Stop();
+                //Environment.Exit(0);
             }
         }
 
