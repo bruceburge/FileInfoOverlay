@@ -1,0 +1,9 @@
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\bin\Debug\FileInfoOverlay.exe.config
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\bin\Debug\FileInfoOverlay.exe
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\bin\Debug\FileInfoOverlay.pdb
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.csprojResolveAssemblyReference.cache
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.Properties.Resources.resources
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.csproj.GenerateResource.Cache
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.exe
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.pdb
+Z:\Users\Bruce\Documents\GitHub\FileInfoOverlay\obj\Debug\FileInfoOverlay.FileInfoOverlay.resources
